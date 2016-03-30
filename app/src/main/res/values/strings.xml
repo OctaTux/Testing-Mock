@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name" translatable="false">CLIPS</string>
+
+    <string name="title_activity_help">Help</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_preferences">Preferenze</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_barriere_architettoniche">Percorso accessibile</string>
+    <string name="pref_barriere_architettoniche">Consiglia il percorso con il minor numero di barriere architettoniche
+    </string>
+
+    <string name="pref_title_claustrofobia">Nessun ascensore</string>
+    <string name="pref_claustrofobia">Consiglia il percorso con il minor numero di ascensori
+    </string>
+
+    <string name="pref_title_indicazioni_vocali">Indicazioni vocali</string>
+    <string name="pref_indicazioni_vocali">Le istruzioni da seguire per raggiungere la destinazione sono fornite da una voce guida</string>
+
+    <string name="pref_title_indicazioni_sonore">Aiuto sonoro</string>
+    <string name="pref_indicazioni_sonore">Se ti allontani troppo dal percorso consigliato, un suono ti avviserà</string>
+
+</resources>

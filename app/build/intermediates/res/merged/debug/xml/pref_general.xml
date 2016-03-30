@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="barriere_switch"
+        android:summary="@string/pref_barriere_architettoniche"
+        android:title="@string/pref_title_barriere_architettoniche" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="ascensori_switch"
+        android:summary="@string/pref_claustrofobia"
+        android:title="@string/pref_title_claustrofobia" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="tts_switch"
+        android:summary="@string/pref_indicazioni_vocali"
+        android:title="@string/pref_title_indicazioni_vocali" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="sonar_switch"
+        android:summary="@string/pref_indicazioni_sonore"
+        android:title="@string/pref_title_indicazioni_sonore" />
+
+</PreferenceScreen>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:context="com.example.andrea.myapplication.MainActivity"
+            tools:showIn="@layout/app_bar_main"
+            android:background="#f0f0f0"
+            android:baselineAligned="false"
+            android:clickable="false"
+            android:padding="16dp">
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchView"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:inputType="text"
+                android:queryHint="Cerca in Torre Archimede"
+                android:iconifiedByDefault="false"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/white"
+                android:elevation="3dp"
+                android:padding="16dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Via Trieste, 63 - 35121 Padova (Italy)"
+                    android:id="@+id/adress"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Torre Archimede"
+                    android:id="@+id/building_name"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#9B0014"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:textIsSelectable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Il Dipartimento di Matematica si propone come il riferimento fondamentale dell'Ateneo per le competenze matematiche e informatiche, sia sul piano della ricerca che in quello della didattica."
+                    android:id="@+id/description"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:elevation="3dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Orari"
+                    android:id="@+id/orari_title"
+                    android:textColor="#9B0014"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:textIsSelectable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7:30 - 19:30. Dal lunedì al venerdì."
+                    android:id="@+id/orari_body"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:elevation="3dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="La struttura"
+                    android:id="@+id/building_structure_title"
+                    android:textColor="#9B0014"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:textIsSelectable="true" />
+
+                <ExpandableListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expandableListView" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_my_location"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="26dp"
+            android:layout_gravity="bottom|end"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>
